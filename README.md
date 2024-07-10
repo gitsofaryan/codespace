@@ -72,7 +72,7 @@ You can view the live preview of the project [here](https://code-sync-live.verce
     ```bash
      npm install
     ```
-5. **Start the frontend and backend servers:**  
+5. **Start the frontend and backend servers:**
    Frontend:
     ```bash
     cd client
@@ -95,7 +95,7 @@ You can view the live preview of the project [here](https://code-sync-live.verce
 
 ## 🤝 Contribute
 
-We welcome contributions to make Code Sync even better! Whether you're reporting a bug, suggesting a new feature, or fixing a typo, your input is valuable to us. Follow the [contribution guidelines](CONTRIBUTING.md) to get started.
+We welcome contributions to make Code Space even better! Whether you're reporting a bug, suggesting a new feature, or fixing a typo, your input is valuable to us. Follow the [contribution guidelines](CONTRIBUTING.md) to get started.
 
 ## 🌟 Support Us
 
