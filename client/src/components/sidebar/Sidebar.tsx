@@ -10,6 +10,8 @@ import { VIEWS } from "@/types/view"
 import { IoCodeSlash } from "react-icons/io5"
 import { MdOutlineDraw } from "react-icons/md"
 import cn from "classnames"
+// import { LuSticker } from "react-icons/lu";
+import { AiFillRedditCircle } from "react-icons/ai";
 
 function Sidebar() {
     const {
@@ -18,6 +20,7 @@ function Sidebar() {
         viewComponents,
         viewIcons,
         setIsSidebarOpen,
+        setActiveView  // Ensure you have setActiveView in your context
     } = useViews()
     const { minHeightReached } = useResponsive()
     const { activityState, setActivityState } = useAppContext()
@@ -32,6 +35,13 @@ function Sidebar() {
             setActivityState(ACTIVITY_STATE.CODING)
         }
 
+        if (isMobile) {
+            setIsSidebarOpen(false)
+        }
+    }
+
+    const handleAIButtonClick = () => {
+        setActiveView(VIEWS.AI)
         if (isMobile) {
             setIsSidebarOpen(false)
         }
@@ -67,6 +77,12 @@ function Sidebar() {
                     viewName={VIEWS.SETTINGS}
                     icon={viewIcons[VIEWS.SETTINGS]}
                 />
+                 {/* <button
+                    className="self-end"
+                    onClick={handleAIButtonClick}  // Attach the click handler
+                >
+                    <AiFillRedditCircle size={30} />
+                </button> */}
 
                 {/* Button to change activity state coding or drawing */}
                 <button className="self-end" onClick={changeState}>
