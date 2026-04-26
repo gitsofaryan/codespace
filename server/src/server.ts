@@ -262,6 +262,10 @@ io.on("connection", (socket) => {
 
 const PORT = process.env.PORT || 3000
 
+app.get("/status", (req: Request, res: Response) => {
+	res.status(200).json({ status: "OK" })
+})
+
 app.get("/", (req: Request, res: Response) => {
 	// Send the index.html file
 	res.sendFile(path.join(__dirname, "..", "public", "index.html"))
