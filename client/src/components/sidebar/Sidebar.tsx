@@ -18,7 +18,6 @@ function Sidebar() {
         viewComponents,
         viewIcons,
         setIsSidebarOpen,
-        setActiveView  // Ensure you have setActiveView in your context
     } = useViews()
     const { minHeightReached } = useResponsive()
     const { activityState, setActivityState } = useAppContext()
