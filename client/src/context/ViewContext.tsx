@@ -31,7 +31,7 @@ function ViewContextProvider({ children }: { children: ReactNode }) {
         [VIEWS.SETTINGS]: <SettingsView />,
         [VIEWS.CHATS]: <ChatsView />,
         [VIEWS.RUN]: <RunView />,
-        // [VIEWS.AI]: <AskAIView />,
+        [VIEWS.AI]: <div />,
     })
     const [viewIcons] = useState({
         [VIEWS.FILES]: <LuFiles size={28} />,
@@ -39,7 +39,7 @@ function ViewContextProvider({ children }: { children: ReactNode }) {
         [VIEWS.SETTINGS]: <IoSettingsOutline size={28} />,
         [VIEWS.CHATS]: <PiChats size={30} />,
         [VIEWS.RUN]: <PiPlay size={28} />,
-        // [VIEWS.AI]: <IoSettingsOutline size={28} />,
+        [VIEWS.AI]: <IoSettingsOutline size={28} />,
     })
 
     return (

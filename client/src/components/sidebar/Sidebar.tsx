@@ -10,8 +10,6 @@ import { VIEWS } from "@/types/view"
 import { IoCodeSlash } from "react-icons/io5"
 import { MdOutlineDraw } from "react-icons/md"
 import cn from "classnames"
-// import { LuSticker } from "react-icons/lu";
-import { AiFillRedditCircle } from "react-icons/ai";
 
 function Sidebar() {
     const {
@@ -40,12 +38,6 @@ function Sidebar() {
         }
     }
 
-    const handleAIButtonClick = () => {
-        setActiveView(VIEWS.AI)
-        if (isMobile) {
-            setIsSidebarOpen(false)
-        }
-    }
 
     return (
         <aside className="flex w-full md:h-full md:max-h-full md:min-h-full md:w-auto">
